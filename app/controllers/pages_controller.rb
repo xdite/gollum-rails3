@@ -72,7 +72,7 @@ class PagesController < ApplicationController
   end
 
   def commit_message
-    { :message => params[:message] }
+    { :message => params[:message] , :name => "blah" , :email => "xxx.com"}
   end
   
 end
