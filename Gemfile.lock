@@ -52,6 +52,10 @@ GEM
       rails (>= 3.0.0.beta4)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    github (0.4.4)
+      highline (~> 1.5.1)
+      json (>= 1.2.0)
+      text-format (>= 1.0.0)
     github-markup (0.5.0)
     gollum (1.0.1)
       albino (~> 1.0)
@@ -64,7 +68,9 @@ GEM
     grit (2.3.0)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
+    highline (1.5.2)
     i18n (0.4.1)
+    json (1.4.6)
     json_pure (1.4.6)
     mail (2.2.7)
       activesupport (>= 2.3.6)
@@ -118,6 +124,9 @@ GEM
       rubyzip
     sinatra (1.0)
       rack (>= 1.0)
+    text-format (1.0.0)
+      text-hyphen (~> 1.0.0)
+    text-hyphen (1.0.0)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -134,11 +143,14 @@ DEPENDENCIES
   autotest
   capybara
   factory_girl_rails
+  github
   gollum
+  grit
   mustache
   mustache_rails3
   mysql2
   rails (= 3.0.0)
   rails3-generators
   rspec-rails (>= 2.0.0.rc)
+  sanitize
   webrat

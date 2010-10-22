@@ -10,6 +10,9 @@ gem 'mustache'
 gem 'mustache_rails3'
 gem 'gollum'
 gem 'mustache'
+gem 'grit'
+gem 'github', :require => 'github/markup'
+gem 'sanitize'
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0.rc" 
