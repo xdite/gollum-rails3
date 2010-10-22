@@ -21,6 +21,14 @@ class PagesController < ApplicationController
     end
   end
   
+  def history
+    @name     = params[:name]
+    wiki      = Gollum::Wiki.new("/Users/xdite/projects/personal_wiki")
+    @page     = wiki.page(@name)
+    @page_num = [params[:page].to_i, 1].max
+    @versions = @page.versions :page => @page_num
+  end
+  
   def edit
     if request.post?
       name   = params[:name]

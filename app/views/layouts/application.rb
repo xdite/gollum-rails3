@@ -5,7 +5,7 @@ class Layouts::Application < Mustache::Rails
   end
   
   def render_javascripts
-    javascript_include_tag :all
+    javascript_include_tag "jquery-1.4.2.min", "jquery.previewable_comment_form", "jquery.text_selection-1.0.0.min", "jquery.tabs", "gollum"
   end
   
   def link_to_root

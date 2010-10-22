@@ -9,7 +9,7 @@ GollumRails3::Application.routes.draw do
 
   match '/create/:name' => "pages#create"
   match '/edit/:name' => "pages#edit"
-  match '/history/:name' => "pages:history"
+  match '/history/:name' => "pages#history"
   match '*page' => "pages#page"
   
   # Sample of named route:
