@@ -1,2 +1,26 @@
-a
-{{yield}}
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{{title}}</title>
+    {{{render_stylesheets}}}
+	{{{render_javascriptes}}}
+    <script src="/javascripts/MathJax/MathJax.js" type="text/javascript">
+      MathJax.OutputJax.fontDir = "http://github-assets.s3.amazonaws.com/javascripts/MathJax/fonts"
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"]
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="site">
+        <div id="guides">
+          {{{yield}}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

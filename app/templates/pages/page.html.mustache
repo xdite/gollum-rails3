@@ -1,0 +1,27 @@
+<div class="guide">
+  <div class="main">
+    <div class="actions">
+      <a href="/">Home</a> | <a href="/edit/{{name}}">Edit</a>
+    </div>
+    <h1>{{title}}</h1>
+    <div class="content wikistyle gollum {{format}}">
+      {{{content}}}
+    </div>
+    {{#has_footer}}
+    <div class="footer wikistyle gollum {{footer_format}}">
+      {{{footer_content}}}
+    </div>
+    {{/has_footer}}
+  </div>
+</div>
+<div class="admin">
+  <div style="float: left;">
+    <small>Last edited by <b>{{author}}</b>, {{date}}</small>
+    <div class="actions">
+      <a href="/">Home</a> | <a href="/edit/{{name}}">Edit</a>
+    </div>
+  </div>
+  <div style="float: right;">
+    <a href="/history/{{name}}">View Revision History</a>
+  </div>
+</div>

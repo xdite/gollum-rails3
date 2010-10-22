@@ -6,6 +6,12 @@ GollumRails3::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
+
+  match '/create/:name' => "pages#create"
+  match '/edit/:name' => "pages#edit"
+  match '/history/:name' => "pages:history"
+  match '*page' => "pages#page"
+  
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
@@ -50,7 +56,7 @@ GollumRails3::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
   
-  root :to => "pages#welcome"
+  root :to => "pages#page"
   
   # See how all your routes lay out with "rake routes"
 

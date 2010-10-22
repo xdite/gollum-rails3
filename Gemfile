@@ -8,6 +8,8 @@ gem 'rails', '3.0.0'
 gem 'mysql2'
 gem 'mustache'
 gem 'mustache_rails3'
+gem 'gollum'
+gem 'mustache'
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0.rc" 

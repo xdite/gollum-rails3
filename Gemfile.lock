@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    albino (1.0)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     autotest (4.4.1)
@@ -51,6 +52,18 @@ GEM
       rails (>= 3.0.0.beta4)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    github-markup (0.5.0)
+    gollum (1.0.1)
+      albino (~> 1.0)
+      github-markup (>= 0.4.0, < 1.0.0)
+      grit (~> 2.1)
+      mustache (>= 0.11.2, < 1.0.0)
+      nokogiri (~> 1.4)
+      sanitize (~> 1.0)
+      sinatra (~> 1.0)
+    grit (2.3.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
     i18n (0.4.1)
     json_pure (1.4.6)
     mail (2.2.7)
@@ -96,11 +109,15 @@ GEM
     rspec-rails (2.0.1)
       rspec (~> 2.0.0)
     rubyzip (0.9.4)
+    sanitize (1.2.1)
+      nokogiri (~> 1.4.1)
     selenium-webdriver (0.0.29)
       childprocess (>= 0.0.7)
       ffi (~> 0.6.3)
       json_pure
       rubyzip
+    sinatra (1.0)
+      rack (>= 1.0)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -117,6 +134,7 @@ DEPENDENCIES
   autotest
   capybara
   factory_girl_rails
+  gollum
   mustache
   mustache_rails3
   mysql2
